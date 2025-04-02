@@ -9,6 +9,5 @@ while not at_goal():
         move()
     elif right_is_clear():
         turn()
-        move()
     else: turn_left()   
         
