@@ -7,6 +7,9 @@ y_position = [-125, 125, -75, 75, -25, 25]
 colours = ['red', 'orange', 'green', 'blue', 'purple', 'black']
 all_t = []
 
+
+
+
 user_input=s.textinput(title="Who will win the race", prompt="Choose the colors('red'/'orange'/'green'/'blue'/'purple'/'black'): ")
 if user_input in colours:
     is_on=True
@@ -45,8 +48,8 @@ while is_on:
 
 
 if user_input==is_correct:
-    Turtle().write("You win the bet",font=("Arial",25,"bold"),align="center")
+    Turtle().write(f"You've won, The {is_correct} turtle is the winner ",font=("Arial",25,"bold"),align="center")
 else: 
-    Turtle().write("You lose the bet",font=("Arial",25,"bold"),align="center")
+    Turtle().write(f"You've lost, The {is_correct} turtle is the winner",font=("Arial",25,"bold"),align="center")
 
 s.exitonclick()
