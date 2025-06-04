@@ -11,9 +11,9 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        with open("snake_111/data.txt", mode='r') as data:
+        with open("sanke_update_version/data.txt", mode='r') as data:
             self.high_score = int(data.read())
-        with open("snake_111/name.txt", mode='r') as name_file:
+        with open("sanke_update_version/name.txt", mode='r') as name_file:
             self.name = name_file.read()
         self.hideturtle()
         self.color("white")
@@ -31,9 +31,9 @@ class Scoreboard(Turtle):
 
     def highest_score(self, name):
         self.high_score = self.score
-        with open("snake_111/data.txt", mode='w') as file:
+        with open("sanke_update_version/data.txt", mode='w') as file:
             file.write(str(self.high_score))
-        with open("snake_111/name.txt", mode='w') as file:
+        with open("sanke_update_version/name.txt", mode='w') as file:
             file.write(name.upper()+'->')
         self.goto(0, 0)
         self.write(f"\tCongratulation {name.upper()}!\nYou have done the highest score:{self.high_score}", align=CENTER, font=(
