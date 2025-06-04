@@ -21,6 +21,15 @@ s.onkey(snake.left, "Left")
 s.onkey(snake.right, "Right")
 
 
+def decision():
+    
+    if scoreboard.score>scoreboard.high_score:
+        user_input=s.textinput(title="", prompt="Enter your name: ")
+        scoreboard.highest_score(user_input)
+    else:
+        scoreboard.game_over()
+
+
 is_on = True
 while is_on:
     s.update()
@@ -37,17 +46,13 @@ while is_on:
 
     if not -470 < snake.head.xcor() < 470 or not -270 < snake.head.ycor() < 270:
         is_on = False
-        if scoreboard.score>scoreboard.high_score:
-            user_input=s.textinput(title="", prompt="Enter your name: ")
-            scoreboard.highest_score(user_input)
-        else:
-            scoreboard.game_over()
+        decision()
         # snake.reset()
     
     for segment in snake.segment[1:]:
         if snake.head.distance(segment)<10:
             is_on = False
-            scoreboard.game_over()
+            decision()
 
 
 s.exitonclick()
