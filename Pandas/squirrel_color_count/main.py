@@ -1,6 +1,6 @@
 import pandas as pd
 
-data=pd.read_csv("Pandas/2018_Central_Park_Squirrel_Census.csv")
+data=pd.read_csv("2018_Central_Park_Squirrel_Census.csv")
 
 grey_squirrel=len(data[data["Primary Fur Color"]=="Gray"])
 red_squirrel=len(data[data["Primary Fur Color"]=="Cinnamon"])
