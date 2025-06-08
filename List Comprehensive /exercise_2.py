@@ -8,3 +8,6 @@ squared_numbers=[n*n for n in numbers]
 #Write your code 👆 above:
 
 print(squared_numbers)
+
+
+# https://replit.com/@appbrewery/day-26-1-exercise#main.py
