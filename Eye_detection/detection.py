@@ -17,7 +17,7 @@ def play_alarm():
 
 
 def eye_closed(landmarks):
-    # চোখের উপরের ও নিচের ল্যান্ডমার্কের y-ভ্যালু দিয়ে সহজভাবে চেক
+    # land mark to eye up and down y point
     left_eye = [landmarks[159], landmarks[145]]
     right_eye = [landmarks[386], landmarks[374]]
     left_dist = abs(left_eye[0].y - left_eye[1].y)
