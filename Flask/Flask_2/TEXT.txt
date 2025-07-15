@@ -1,0 +1,7 @@
+
+source .venv/bin/activate
+
+
+@app.route('/user/<username>')
+def username(username):
+    return f"<h1>Hello, {username}</h1>"
