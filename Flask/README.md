@@ -39,9 +39,6 @@ rm test.py
 
 Remove folder force way :  `rm -rf folder_name`
 
-```
-
-
 
 
 
@@ -51,7 +48,7 @@ Remove folder force way :  `rm -rf folder_name`
 
 চলো step by step dekhi **VS Code Codespace থেকে Flask\_3 project create করা আর code করা কিভাবে কাজ করে** ⬇️
 
----
+
 
 ## ✅ Step-by-Step Guide (inside Codespace):
 
